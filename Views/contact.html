@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="'ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roger Jin">
+    <meta name="keywords" content="Carnegie Mellon University, Information Sysytmes">
+    <meta name="description" content="Roger Jin's professional website">
+    <title>Roger Jin's Professional Website</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body onload=" addYear()">
+    <header>
+        <h1 id="webname">Ruijian(Roger) Jin</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <a href="fun.html">Fun</a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+        </nav>
+
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form action="">
+            <fieldset>
+                <legend>Your Information</legend>
+            <label for="UserName">Your name (required): </label>
+            <input type="text" name="UserName" id="UserName" required>
+            <label for="UserEmail">Your email (required): </label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+        </fieldset>
+        <fieldset>
+            <legend>What you want to tell us</legend>
+            <label for="UserText">Your text (required): </label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+        </fieldset>
+            <input type="submit" value="Send" onclick="validate()">
+            </form>
+            <p id="ValidateMsg"></p>
+
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>ruijianjin@icloud.com</td></tr>
+            <tr><td>Phone</td><td>(214)404-7750</td></tr>
+            <tr><td>LinkedIn</td><td>linkedin.com/in/ruijian-roger-jin-ba3132294</td></tr>
+        </table>
+
+    </div>
+    <footer>
+        <p id="copyYear">Roger Jin &copy</p>
+    </footer>
+    
+</body>
+</html>

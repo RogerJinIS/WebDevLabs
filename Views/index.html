@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="'ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roger Jin">
+    <meta name="keywords" content="Carnegie Mellon University, Information Sysytmes">
+    <meta name="description" content="Roger Jin's professional website">
+    <title>Roger Jin's Professional Website</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body onload="addYear()">
+    <div id="container">
+    <header>
+        <h1 id="webname">Ruijian(Roger) Jin</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="cv.html">CV</a>
+            <a id="contact" href="contact.html">Contact</a>
+            <a id="fun" href="fun.html">Fun</a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2 id="greeting"> </h2>
+        <img class="classA" src="../static/professional headshot.jpg" alt="Roger Jin" width="500px">
+        <div class="classA">
+            <p>
+            <span id="shortIntro">My name is Roger Jin, and I am currently a first-year student at Carnegie Mellon 
+                    University studying Statistics and Machine Learning with an intended additional major in Business Administration. 
+                    I was born and raised in Shenzhen, China, and have been studying in the US since the start of middle school.
+                        Aside from being a member of Alpha Kappa Psi, I am also involved in the Asian Student Association and the Tartan Links Golf Club.
+            </span>
+            <span id="readMore"> read more...</span>
+            <span id="longIntro">When I first moved to the US, I barely knew any English. The culture shock, combined with the language barrier, put me in a very helpless position. 
+                However, it was this environment that drove me and gave me the motivation to acclimate to this new culture and become fluent in English. In the process of seeking to improve, 
+                I developed a love for problem-solving, which I have carried with me throughout my high school years and continue to apply today. As of right now, I plan to pursue a career in consulting, 
+                where I can continue to utilize and further develop the skills I love. Beyond my professional goals, I enjoy playing golf, exploring, traveling, and trying new things.
+            </span>
+            <span id="readLess">read less</span>
+        </p>
+        </div>
+    </div>
+    <footer>
+        <p id="copyYear">Roger Jin &copy</p>
+    </footer>
+</div> 
+</body>
+</html> 
